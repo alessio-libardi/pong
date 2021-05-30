@@ -10,9 +10,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Background" type="ColorRect" parent="."]
-margin_right = 1024.0
-margin_bottom = 600.0
+[node name="Player VS Player" type="RichTextLabel" parent="."]
+margin_left = 493.243
+margin_top = 261.257
+margin_right = 600.243
+margin_bottom = 278.257
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Player VS Player"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -27,32 +31,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Settings" type="Button" parent="."]
-margin_left = 512.775
-margin_top = 332.558
-margin_right = 575.775
-margin_bottom = 352.558
-text = "Settings"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="MarginContainer" type="MarginContainer" parent="."]
-margin_left = 512.0
-margin_top = 300.0
-margin_right = 512.0
-margin_bottom = 300.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Player VS Player" type="RichTextLabel" parent="."]
-margin_left = 493.243
-margin_top = 261.257
-margin_right = 600.243
-margin_bottom = 278.257
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Player VS Player"
-
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
-[connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
